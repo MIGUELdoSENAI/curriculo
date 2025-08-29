@@ -1,0 +1,168 @@
+  <!DOCTYPE html>
+<!--Curriculum utilizando estilo CSS Prof Paulo Camargo 12/12/22 SENAI UNID 1.18 Santo André-SP -->
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curriculum Paulo Camargo</title>
+
+<!-- Carregando fontes do Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+<!-- Carregando ícones do FontAwesome -->
+<script src="https://kit.fontawesome.com/02cf9fe2d7.js" crossorigin="anonymous"></script>
+
+<style>
+/* Cabeçalho */
+#Cabecalho {
+    background-color: rgb(74, 116, 255);
+    margin: 50px 0;
+    font-family: 'Hubballi', cursive;
+}
+
+#nomeEtitulo {
+    background-color: white;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#nomeEtitulo h1, #nomeEtitulo h2 {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+/* Contato */
+#contato {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contato i {
+    width: 30px;
+    color: rgb(106, 198, 255);
+}
+
+/* Layout principal */
+#recipiente {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-column-gap: 20px;
+}
+
+#Barra_lateral, #content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+/* Cartões */
+.cartao h3 {
+    font-family: 'Hubballi', cursive;
+}
+
+.cartao {
+    font-family: 'Montserrat', sans-serif;
+    border: 5px solid gray;
+    border-radius: 15px;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+<div id="Cabecalho">
+    <div id="nomeEtitulo">
+        <h1>Miguel Bonamin Maciel</h1>
+        <h2>Desenvolvedor de Sistemas</h2>
+    </div>
+</div>
+
+<div id="recipiente">
+    <!-- Barra lateral -->
+    <div id="Barra_lateral">
+        <div class="cartao">
+            <h3>Contato</h3>
+            <img width="100" src="https://a-static.mlcdn.com.br/800x560/brinquedo-de-pelucia-macio-para-criancas-tung-tung-sahur-tralalero-tubarao-sofa-de-pelucia-ornamento-beast-kingdom/aliexpress/205135409/2136388a2d913de55e73a5dec5f24544.jpeg" alt="Foto Paulo Camargo">
+            <ul id="contato">
+                <li><i class="fa-solid fa-envelope"></i> senai@email.com.br</li>
+                <li><i class="fa-solid fa-phone"></i> 11 9999 9999</li>
+                <li><i class="fa-solid fa-location-pin"></i> Santo André-SP</li>
+            </ul>
+        </div>
+
+        <div class="cartao">
+            <h3>Habilidades</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+
+        <div class="cartao">
+            <h3>Formação Acadêmica</h3>
+            <ul>
+                <li>Analista de Sistemas</li>
+                <li>Programador de Software</li>
+                <li>DevOps</li>
+            </ul>
+        </div>
+
+        <div class="cartao">
+            <h3>Links</h3>
+            <ul>
+                <li><a target="_blank" href="https://linkedin.com">LinkedIn</a></li>
+                <li><a target="_blank" href="https://apinfo.com">Apinfo</a></li>
+                <li><a target="_blank" href="https://vagas.com.br">Vagas.com</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div id="content">
+        <div class="cartao">
+            <h3>Sobre mim</h3>
+            <p>
+                Sou um dos melhores desenvolvedores de software do Brasil se nao o melhor, 1 aluno destaque na conta e considerado menino prodigio, melhores professores do brasil e bora pra cima !!!!
+            </p>
+        </div>
+
+        <div class="cartao">
+            <h3>Experiências Profissionais</h3>
+
+            <p>
+                <b>Empresa Tecnologia S/A - Jan/22 a Dez/24</b><br>
+                Realizado projeto de datacenter da empresa
+                <ul>
+                    <li>Técnico de Desenvolvimento</li>
+                    <li>Desenvolvedor de Software</li>
+                </ul>
+            </p>
+
+            <p>
+                <b>Empresa Desenvolvetech S/A - Jan/22 a Dez/25</b><br>
+                Realizado projeto de migração dos servidores para nuvem
+                <ul>
+                    <li>Técnico de Desenvolvimento</li>
+                    <li>Desenvolvedor de Software</li>
+                </ul>
+            </p>
+
+            <b>Vídeo com minhas habilidades incriveis</b><br>
+            <div class="media">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/E0K6mAhxSkU"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
